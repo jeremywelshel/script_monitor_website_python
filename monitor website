@@ -1,0 +1,10 @@
+# monitor a website 
+#tells if it is succesfull
+# this scripts monitors a website 
+
+import requests
+
+r = requests.get("https://www.uber.com/", timeout = 5)
+if r.status_code != 200:
+    print( "Sucessful Response")
+
