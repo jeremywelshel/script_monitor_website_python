@@ -6,5 +6,7 @@ import requests
 
 r = requests.get("https://www.uber.com/", timeout = 5)
 if r.status_code != 200:
-    print( "Sucessful Response")
+    print( "Sucessful Response, the server is up and running ")
+else:
+    print("The server is down")
 
